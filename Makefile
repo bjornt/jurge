@@ -9,7 +9,7 @@ DATABASE_URL=postgresql:///$(DB_NAME)
 
 REQUIREMENTS_TXT = "requirements.txt"
 TEST_REQUIREMENTS_TXT = "requirements-dev.txt"
-REQUIREMENTS_EXCLUDE = "jurge=="
+REQUIREMENTS_EXCLUDE = "jurge==|jurge\.git|pkg-resources"
 
 .DEFAULT_GOAL := setup
 
