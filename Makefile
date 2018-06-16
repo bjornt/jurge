@@ -68,7 +68,7 @@ db-recreate: db-clean db-setup migrate
 .PHONY: db-recreate
 
 run:
-	$(VE_BIN)/jurge
+	FLASK_APP=jurge $(VE_BIN)/flask run
 .PHONY: run
 
 $(VIRTUALENV):

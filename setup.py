@@ -24,7 +24,4 @@ setup(
     install_requires=requires,
     tests_require=extras_requires_test,
     extras_require={"test": extras_requires_test},
-    entry_points={
-        "console_scripts": [
-            "jurge = jurge.server:run",
-        ]})
+)
