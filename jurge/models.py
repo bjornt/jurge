@@ -1,39 +1,43 @@
-from sqlalchemy.orm import relationship
-from flask_sqlalchemy import SQLAlchemy
-
-from .server import app
-
-__all__ = ['db']
+import sqlalchemy as sa
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, scoped_session, sessionmaker
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres:///jurge'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+__all__ = ['db_session', 'Base']
 
 
-db = SQLAlchemy(app)
+engine = sa.create_engine('postgres:///jurge', convert_unicode=True)
+db_session = scoped_session(sessionmaker(autocommit=False,
+                                         autoflush=False,
+                                         bind=engine))
+Base = declarative_base()
+Base.query = db_session.query_property()
 
 
-class Language(db.Model):
+class Language(Base):
+    __tablename__ = 'language'
 
-    id = db.Column(db.Integer, primary_key=True)
-    code = db.Column(db.String, nullable=False)
-    name = db.Column(db.String, nullable=False)
-    currency = db.Column(db.String, nullable=False)
-
-
-class Product(db.Model):
-
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String, nullable=False)
+    id = sa.Column(sa.Integer, primary_key=True)
+    code = sa.Column(sa.String, nullable=False)
+    name = sa.Column(sa.String, nullable=False)
+    currency = sa.Column(sa.String, nullable=False)
 
 
-class ProductInfo(db.Model):
+class Product(Base):
+    __tablename__ = 'product'
 
-    language_id = db.Column(
-        db.Integer, db.ForeignKey('language.id'), primary_key=True)
+    id = sa.Column(sa.Integer, primary_key=True)
+    name = sa.Column(sa.String, nullable=False)
+
+
+class ProductInfo(Base):
+    __tablename__ = 'product_info'
+
+    language_id = sa.Column(
+        sa.Integer, sa.ForeignKey('language.id'), primary_key=True)
     language = relationship('language')
-    product_id = db.Column(
-        db.Integer, db.ForeignKey('product.id'), primary_key=True)
+    product_id = sa.Column(
+        sa.Integer, sa.ForeignKey('product.id'), primary_key=True)
     product = relationship('product')
-    description = db.Column(db.String, nullable=False)
-    price = db.Column(db.Numeric(2), nullable=False)
+    description = sa.Column(sa.String, nullable=False)
+    price = sa.Column(sa.Numeric(2), nullable=False)

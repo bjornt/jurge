@@ -19,9 +19,9 @@ fileConfig(config.config_file_name)
 # add your model's MetaData object here
 # for 'autogenerate' support
 # target_metadata = None
-from jurge.models import db
+from jurge.models import Base
 
-target_metadata = db.metadata
+target_metadata = Base.metadata
 
 
 # other values from the config, defined by the needs of env.py,
