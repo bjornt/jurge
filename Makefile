@@ -40,6 +40,14 @@ rebuild-requirements.txt: ## Rebuild the requirements.txt files with the latest 
 	grep -Fv -f $(REQUIREMENTS_TXT) temp-requirements.txt > $(TEST_REQUIREMENTS_TXT)
 	rm -rf $(TMP_DIR) temp-requirements.txt
 
+node_modules:
+	yarn install
+
+js-build: node_modules
+	yarn build
+.PHONY: js-build
+
+
 db-setup:
 	sudo -u postgres createuser $(USER) || true
 	sudo -u postgres createdb $(DB_NAME) -O $(USER)
