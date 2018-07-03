@@ -1,7 +1,8 @@
 from setuptools import setup, find_packages
 
 requires = [
-    'Flask-SQLAlchemy',
+    'graphene[sqlalchemy]',
+    'Flask-GraphQL',
     'Flask',
     'alembic',
     'psycopg2-binary',
@@ -24,4 +25,8 @@ setup(
     install_requires=requires,
     tests_require=extras_requires_test,
     extras_require={"test": extras_requires_test},
+    entry_points={
+        "console_scripts": [
+            "jurge = jurge.server:run"
+        ]},
 )

@@ -25,7 +25,7 @@ python-deps: $(VIRTUALENV)
 	$(VE_BIN)/pip install -r requirements.txt -r requirements-dev.txt
 .PHONY: python-deps
 
-setup: python-deps db-setup
+setup: python-deps
 	$(PYTHON) setup.py develop
 .PHONY: setup
 
@@ -68,7 +68,7 @@ db-recreate: db-clean db-setup migrate
 .PHONY: db-recreate
 
 run:
-	FLASK_APP=jurge $(VE_BIN)/flask run
+	$(VE_BIN)/jurge
 .PHONY: run
 
 $(VIRTUALENV):

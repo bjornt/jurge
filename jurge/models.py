@@ -1,17 +1,7 @@
 import sqlalchemy as sa
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship, scoped_session, sessionmaker
+from sqlalchemy.orm import relationship
 
-
-__all__ = ['db_session', 'Base']
-
-
-engine = sa.create_engine('postgres:///jurge', convert_unicode=True)
-db_session = scoped_session(sessionmaker(autocommit=False,
-                                         autoflush=False,
-                                         bind=engine))
-Base = declarative_base()
-Base.query = db_session.query_property()
+from .database import Base
 
 
 class Language(Base):
@@ -35,9 +25,9 @@ class ProductInfo(Base):
 
     language_id = sa.Column(
         sa.Integer, sa.ForeignKey('language.id'), primary_key=True)
-    language = relationship('language')
+    language = relationship('Language')
     product_id = sa.Column(
         sa.Integer, sa.ForeignKey('product.id'), primary_key=True)
-    product = relationship('product')
+    product = relationship('Product')
     description = sa.Column(sa.String, nullable=False)
     price = sa.Column(sa.Numeric(2), nullable=False)
