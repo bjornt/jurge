@@ -1,0 +1,11 @@
+[Unit]
+Description=Jurge uWSGI
+
+[Service]
+Type=simple
+ExecStart=${pwd}/.ve/bin/uwsgi --ini ${pwd}/uwsgi.ini
+Restart=on-failure
+KillSignal=SIGQUIT
+
+[Install]
+WantedBy=multi-user.target

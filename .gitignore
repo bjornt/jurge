@@ -1,3 +1,10 @@
 .ve
 *.egg-info
 __pycache__
+uwsgi.ini
+*.log
+jurge.service
+jurge-wsgi.service
+build/
+nginx.conf
+node_modules/

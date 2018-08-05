@@ -53,7 +53,7 @@ db-setup:
 	sudo -u postgres createdb $(DB_NAME) -O $(USER)
 .PHONY: db-setup
 
-clean: python-clean db-clean
+clean: python-clean db-clean services-clean
 .PHONY: clean
 
 python-clean:
@@ -75,8 +75,40 @@ migrate:
 db-recreate: db-clean db-setup migrate
 .PHONY: db-recreate
 
-run:
-	$(VE_BIN)/jurge
+jurge-wsgi.service: uwsgi.ini
+	pwd=`pwd` envsubst < templates/jurge-wsgi.service.tmpl > jurge-wsgi.service
+
+uwsgi.ini: templates/uwsgi.ini.tmpl
+	pwd=`pwd` envsubst < templates/uwsgi.ini.tmpl > uwsgi.ini
+
+
+jurge.service: nginx.conf templates/jurge.service.tmpl
+	pwd=`pwd` envsubst < templates/jurge.service.tmpl > jurge.service
+
+nginx.conf: templates/nginx.conf.tmpl
+	pwd=`pwd` port=5000 server_name=jurge log_dir=`pwd` static_dir=`pwd`/build envsubst < templates/nginx.conf.tmpl > nginx.conf
+
+services-create: jurge-wsgi.service jurge.service
+.PHONY: services-create
+
+services-clean: stop
+	rm -f jurge-wsgi.service
+	rm -f jurgeservice
+	rm -f nginx.conf
+	rm -f uwsgi.ini
+.PHONY: services-create
+
+run: services-create
+	systemctl --user enable `pwd`/jurge-wsgi.service
+	systemctl --user enable `pwd`/jurge.service
+	systemctl --user start jurge.service
+.PHONY: run
+
+stop:
+	systemctl --user stop jurge.service
+	systemctl --user stop jurge-wsgi.service
+	-systemctl --user disable jurge-wsgi.service
+	-systemctl --user disable jurge.service
 .PHONY: run
 
 $(VIRTUALENV):

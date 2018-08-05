@@ -2,10 +2,11 @@ from setuptools import setup, find_packages
 
 requires = [
     'graphene[sqlalchemy]',
+    #'Flask',
     'Flask-GraphQL',
-    'Flask',
     'alembic',
     'psycopg2-binary',
+    'uwsgi',
     ]
 
 

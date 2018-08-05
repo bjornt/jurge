@@ -1,0 +1,10 @@
+[uwsgi]
+module = jurge.wsgi:application
+
+master = true
+processes = 5
+
+http = 0.0.0.0:5100
+#socket = ${pwd}/jurge.sock
+#chmod-socket = 664
+#vacuum = true
