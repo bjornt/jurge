@@ -8,3 +8,4 @@ jurge-wsgi.service
 build/
 nginx.conf
 node_modules/
+nginx.pid
