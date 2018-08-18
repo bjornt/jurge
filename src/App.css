@@ -26,3 +26,22 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.navbar-grey {
+    background-color: #A9A9A9;
+}
+
+/* change the brand and text color */
+.navbar-grey .navbar-brand,
+.navbar-grey .navbar-text {
+        color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-grey .nav-link {
+        color: rgba(255,255,255,.8);
+}
+/* change the color of active or hovered links */
+.navbar-grey .nav-item.active .nav-link,
+.navbar-grey .nav-item:hover .nav-link {
+        color: #ffffff;
+}

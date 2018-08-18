@@ -14,6 +14,7 @@ import {
     Jumbotron,
     Button
 } from 'reactstrap';
+import './App.css';
 
 class App extends Component {
     constructor(props) {
@@ -38,7 +39,7 @@ class App extends Component {
                       </Media>
                     </NavbarBrand>
                 </Navbar>
-                <Navbar dark className="bg-dark" expand="md">
+                <Navbar className="navbar-grey" expand="md">
                   <Nav>
                     <NavItem>
                       <NavLink href="#">Örhängen</NavLink>
