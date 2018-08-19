@@ -14,7 +14,10 @@ import {
     Jumbotron,
     Button
 } from 'reactstrap';
+import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
+
+import { Bracelets, Earrings, Rings } from './Products.js';
 
 class App extends Component {
     constructor(props) {
@@ -42,16 +45,22 @@ class App extends Component {
                 <Navbar className="navbar-grey" expand="md">
                   <Nav>
                     <NavItem>
-                      <NavLink href="#">Örhängen</NavLink>
+                      <NavLink tag={Link} to='/earrings'>Örhängen</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#">Ringar</NavLink>
+                      <NavLink tag={Link} to='/rings'>Ringar</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#">Armband</NavLink>
+                      <NavLink tag={Link} to='/bracelets'>Armband</NavLink>
                     </NavItem>
                   </Nav>
                 </Navbar>
+                <Switch>
+                  <Route exact path='/' component={Earrings}/>
+                  <Route exact path='/earrings' component={Earrings}/>
+                  <Route exact path='/rings' component={Rings}/>
+                  <Route exact path='/bracelets' component={Bracelets}/>
+                </Switch>
             </div>
         );
     }
