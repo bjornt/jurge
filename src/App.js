@@ -37,7 +37,7 @@ class App extends Component {
         return (
             <div>
                 <Navbar light expand="md" className="d-flex justify-content-center">
-                    <NavbarBrand href="/">
+                    <NavbarBrand tag={Link} to='/'>
                       <Media object src="/jurge-website-header.577x130.png">
                       </Media>
                     </NavbarBrand>
