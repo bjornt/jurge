@@ -2,7 +2,6 @@ from setuptools import setup, find_packages
 
 requires = [
     'graphene[sqlalchemy]',
-    #'Flask',
     'Flask-GraphQL',
     'alembic',
     'psycopg2-binary',
@@ -13,8 +12,8 @@ requires = [
 extras_requires_test = [
     'flake8',
     'pytest',
+    'pyyaml',
 ]
-
 
 setup(
     name="jurge",

@@ -1,0 +1,306 @@
+earrings:
+    1:
+        sv:
+            title: Silverörhängen 1
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 170
+        lt:
+            title: ...
+            description: ...
+            price: 17
+    2:
+        sv:
+            title: Silverörhängen 2
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 250
+        lt:
+            title: ...
+            description: ...
+            price: 25
+    3:
+        sv:
+            title: Silverörhängen 3
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 220
+        lt:
+            title: ...
+            description: ...
+            price: 22
+    4:
+        sv:
+            title: Silverörhängen 4
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 160
+        lt:
+            title: ...
+            description: ...
+            price: 16
+    5:
+        sv:
+            title: Silverörhängen 5
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 280
+        lt:
+            title: ...
+            description: ...
+            price: 28
+    6:
+        sv:
+            title: Silverörhängen 6
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 230
+        lt:
+            title: ...
+            description: ...
+            price: 23
+    7:
+        sv:
+            title: Silverörhängen 7
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 260
+        lt:
+            title: ...
+            description: ...
+            price: 26
+rings:
+    108:
+        sv:
+            title: Silverring 1
+            description:
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque blandit aliquet purus vitae laoreet. Ut
+                lobortis quam orci. Proin eu euismod augue, nec commodo
+                nunc. Ut fermentum tortor at nisl gravida fermentum.
+                Duis semper elit vel nulla fringilla hendrerit. Quisque
+                gravida elementum ligula eget lobortis. Vestibulum
+                viverra ut justo dictum interdum. Cras nec dui
+                ullamcorper, tempor quam ac, suscipit ex. Sed pretium
+                condimentum varius. Praesent quis ligula tortor. Aenean
+                aliquam elementum dui sed rhoncus. Sed iaculis diam eu
+                condimentum fringilla. Pellentesque eget diam in est
+                viverra convallis non at turpis. Mauris ultrices ac
+                mauris nec porttitor. Mauris quis scelerisque elit, sit
+                amet venenatis metus.
+
+                Cras elementum mollis urna ut efficitur. Maecenas ac mi
+                at ex consectetur posuere sit amet quis neque. Sed
+                vehicula, elit et varius bibendum, felis justo viverra
+                justo, quis aliquam nulla sapien ac est. Praesent
+                molestie imperdiet consectetur. Maecenas augue sapien,
+                commodo ac nulla et, accumsan tincidunt quam. Cras sed
+                libero non dui bibendum scelerisque a a ligula. Aliquam
+                commodo lorem vitae fringilla accumsan. Curabitur
+                tincidunt turpis fermentum nibh sodales rutrum. Nulla
+                sit amet volutpat eros, accumsan semper velit.
+                Suspendisse ac quam eros. Etiam ex nibh, posuere
+                elementum efficitur sed, vestibulum nec lacus. Etiam
+                volutpat odio lacus. Mauris condimentum nunc et
+                vestibulum aliquam.
+            price: 260
+        lt:
+            title: ...
+            description: ...
+            price: 26
