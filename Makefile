@@ -1,4 +1,4 @@
-DEB_DEPENDENCIES = postgresql python3-venv
+DEB_DEPENDENCIES = postgresql python3-dev python3-venv gcc
 
 VIRTUALENV = .ve
 VE_BIN = $(VIRTUALENV)/bin
