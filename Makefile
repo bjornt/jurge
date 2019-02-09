@@ -1,4 +1,4 @@
-DEB_DEPENDENCIES = postgresql python3-dev python3-venv gcc
+DEB_DEPENDENCIES = postgresql postgresql-server-dev-10 python3-dev python3-venv gcc
 
 VIRTUALENV = .ve
 VE_BIN = $(VIRTUALENV)/bin
@@ -22,6 +22,7 @@ deb-deps:
 .PHONY: deb-deps
 
 python-deps: $(VIRTUALENV)
+	$(VE_BIN)/pip install wheel
 	$(VE_BIN)/pip install -r requirements.txt -r requirements-dev.txt
 .PHONY: python-deps
 

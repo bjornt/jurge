@@ -1,35 +1,33 @@
 import graphene
 from graphene import relay
-from graphene_sqlalchemy import SQLAlchemyConnectionField, SQLAlchemyObjectType
 
 from . import models
 
 
-class Product(SQLAlchemyObjectType):
+class Product(graphene.ObjectType):
 
     class Meta:
-        model = models.Product
         interfaces = (relay.Node, )
 
+    name = graphene.String()
 
-class ProductInfo(SQLAlchemyObjectType):
+    @classmethod
+    def get_node(self, info, id):
+        return models.Product.query.get(id)
+
+
+class ProductConnection(graphene.Connection):
 
     class Meta:
-        model = models.ProductInfo
-        interfaces = (relay.Node, )
-
-
-class Language(SQLAlchemyObjectType):
-
-    class Meta:
-        model = models.Language
-        interfaces = (relay.Node, )
+        node = Product
 
 
 class Query(graphene.ObjectType):
     node = relay.Node.Field()
-    all_products = SQLAlchemyConnectionField(Product)
-    all_languages = SQLAlchemyConnectionField(Language)
+    products = graphene.ConnectionField(ProductConnection)
+
+    def resolve_products(self, info):
+        return models.Product.query.all()
 
 
-schema = graphene.Schema(query=Query, types=[Product, ProductInfo, Language])
+schema = graphene.Schema(query=Query, types=[Product])

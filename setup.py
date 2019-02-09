@@ -12,6 +12,7 @@ requires = [
 extras_requires_test = [
     'flake8',
     'pytest',
+    'pytest_postgresql',
     'pyyaml',
 ]
 
@@ -22,6 +23,9 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     test_suite="jurge",
+    package_data={
+        'jurge': ['alembic/*', 'alembic/versions/*'],
+    },
     install_requires=requires,
     tests_require=extras_requires_test,
     extras_require={"test": extras_requires_test},
