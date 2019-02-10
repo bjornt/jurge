@@ -4,7 +4,7 @@ import pytest
 from pytest_postgresql import factories as pg_factory
 
 from .. import database, graphql
-from ..models import Category, Product
+from ..testing import factory
 
 
 @pytest.fixture
@@ -42,9 +42,8 @@ class TestSchema:
         assert result['data']['products']['edges'] == []
 
     def test_product_names(self, session):
-        category = Category(name='my-category')
-        product1 = Product(name='product-1', category=category)
-        product2 = Product(name='product-2', category=category)
+        product1 = factory.make_Product()
+        product2 = factory.make_Product()
         session.add(product1)
         session.add(product2)
         session.flush()
@@ -60,6 +59,7 @@ class TestSchema:
                 }
             }"""
         result = client.execute(query)
-        expected = [
-            {'node': {'name': 'product-1'}}, {'node': {'name': 'product-2'}}]
-        assert result['data']['products']['edges'] == expected
+        returned_names = [
+            edge['node']['name']
+            for edge in result['data']['products']['edges']]
+        assert returned_names == [product1.name, product2.name]
