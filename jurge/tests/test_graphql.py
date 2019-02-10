@@ -22,8 +22,8 @@ class TestSchema:
         assert result['data']['products']['edges'] == []
 
     def test_product_names(self, session):
-        product1 = factory.make_Product()
-        product2 = factory.make_Product()
+        product1 = factory.make_ProductInfo().product
+        product2 = factory.make_ProductInfo().product
         session.flush()
         client = Client(graphql.schema)
         query = """
@@ -41,3 +41,39 @@ class TestSchema:
             edge['node']['name']
             for edge in result['data']['products']['edges']]
         assert returned_names == [product1.name, product2.name]
+
+    def test_product_info_basics(self, session):
+        info = factory.make_ProductInfo()
+        session.flush()
+        client = Client(graphql.schema)
+        query = """
+            query ProductQuery {
+                products {
+                    edges {
+                        node {
+                            info {
+                                edges {
+                                    node {
+                                        title
+                                        description
+                                        price
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }"""
+        result = client.execute(query)
+        returned_products = [
+            edge['node']
+            for edge in result['data']['products']['edges']]
+        returned_infos = [
+            dict(edge['node'])
+            for node in returned_products
+            for edge in node['info']['edges']]
+        assert returned_infos == [{
+                'title': info.title,
+                'description': info.description,
+                'price': str(info.price),
+        }]
