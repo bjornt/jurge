@@ -9,3 +9,4 @@ build/
 nginx.conf
 node_modules/
 nginx.pid
+.coverage

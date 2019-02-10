@@ -112,5 +112,12 @@ stop:
 	-systemctl --user disable jurge.service
 .PHONY: run
 
+coverage:
+	$(VE_BIN)/pytest --cov=jurge jurge
+
+
+test:
+	$(VE_BIN)/pytest jurge
+
 $(VIRTUALENV):
 	python3 -m venv $@

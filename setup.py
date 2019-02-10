@@ -12,6 +12,7 @@ requires = [
 extras_requires_test = [
     'flake8',
     'pytest',
+    'pytest-cov',
     'pytest_postgresql',
     'pyyaml',
 ]
